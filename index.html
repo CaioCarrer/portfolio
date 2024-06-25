@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Carrer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>        
+        <a id="language-selector1" class="icon-white" href="./indexEN.html">English</a> <!--language selector for PC version-->
+
+        <div id="top-bar">  <!--options bar for mobile version-->
+            <img id="menu-button" src="./imagens/menu.png" alt="botão de menu">
+            <p id="title">Caio Carrer</p>
+            <a id="language-selector2" class="icon-white" href="./indexEN.html">EN</a>
+        </div>
+
+        <div id="menu1">    <!--menu for PC version-->
+            <ul id="menu-content">
+                <li><button class="menu menu-introduction icon-white">Apresentação</button></li>
+                <li><button class="menu menu-resume icon-white">Currículo</button></li>
+                <li><button class="menu menu-portfolio icon-white">Portfólio</button></li>
+            </ul>
+
+            <div id="icons">    
+                <a href="https://www.linkedin.com/in/caio-carrer-095101281/"><img class="icon icon-yellow" src="./imagens/icones/linkedinpreto.png" alt="ícone do Linkedin"/></a>
+                <a href="https://www.behance.net/caiocarrer"><img class="icon icon-yellow" src="./imagens/icones/behancepreto.png" alt="ícone do Behance"/></a>
+                <a href="https://twitter.com/imcarrer"><img class="icon icon-yellow" src="./imagens/icones/twitterpreto.png" alt="ícone do X"/></a>
+                <a href="https://github.com/CaioCarrer"><img class="icon icon-yellow" src="./imagens/icones/githubpreto.png" alt="ícone do Github"/></a>
+                <p id="email">carrer.caio@gmail.com</p>
+            </div>            
+        </div>
+        
+        <div id="menu2">    <!--menu for mobile version-->
+            <ul id="menu-content">
+                <li><button class="menu menu-introduction icon-white">Apresentação</button></li>
+                <li><button class="menu menu-resume icon-white">Currículo</button></li>
+                <li><button class="menu menu-portfolio icon-white">Portfólio</button></li>
+                <div id="icons">
+                    <a href="https://www.linkedin.com/in/caio-carrer-095101281/"><img class="icon icon-yellow" src="./imagens/icones/linkedinpreto.png" alt="ícone do Linkedin"/></a>
+                    <a href="https://www.behance.net/caiocarrer"><img class="icon icon-yellow" src="./imagens/icones/behancepreto.png" alt="ícone do Behance"/></a>
+                    <a href="https://twitter.com/imcarrer"><img class="icon icon-yellow" src="./imagens/icones/twitterpreto.png" alt="ícone do X"/></a>
+                    <a href="https://github.com/CaioCarrer"><img class="icon icon-yellow" src="./imagens/icones/githubpreto.png" alt="ícone do Github"/></a>
+                    <p id="email">carrer.caio@gmail.com</p>
+                </div>
+            </ul>
+        </div>
+ 
+        <div id="content">  <!--div containing all website content-->
+            <div id="heading">  <!--introduction and presentation-->
+                <img id="profile-picture" src="./imagens/perfil.png" alt="Minha foto">
+                <p id="heading-text">Oi! Meu nome é <span style="color: #FFD23F;">Caio Carrer</span>, eu sou desenvolvedor web front-end e designer gráfico. Resido em Sorocaba e estou começando minha carreira como desenvolvedor.</p>
+                <div id="resume1"></div>    <!--div for quick selection using the menu-->
+            </div>
+
+            <div id="resume">   <!--resume beginning-->
+                <h1>Currículo</h1>
+                <a id="download-button" href="./resumes/resume.pdf" download="CaioCarrer_Currículo">Baixar Currículo</a>
+                <h2>Experiência Profissional</h2>
+                <ul class="content-list">
+                    <li><h3>iW English School (2015 - 2020)</h3>
+                    <p>Professor de Inglês</br>
+                    Atribuições: dar aulas, desenvolver <i>workshops.</i></p></li>
+                    <li><h3>João Parreira Negócios Imobiliários (2022)</h3>
+                    <p>Estagiário em Design Gráfico</br>
+                    Atribuições: desenvolver peças gráficas e vídeos para redes sociais, placas e <i>outdoors.</i>, criar e gerenciar anúncios no Meta Business.</p></li>
+                </ul>
+
+                <h2>Formação Acadêmica</h2>
+                <ul class="content-list">
+                    <li><h3>Colégio Técnico Industrial Isaac Portal Roldán (2013-2015)</h3>
+                    <p>Ensino Médio completo</br>
+                    Curso técnico em eletrônica incompleto</p></li>
+                    <li><h3>Unesp Bauru - Universidade Estadual Paulista Júlio de Mesquita Filho (2018-2022)</h3>
+                    <p>Graduação completa em design gráfico</p></li>
+                </ul>
+
+                <h2>Atividades Extracurriculares</h2>
+                <ul class="content-list">
+                    <li><h3>Bolsa de Iniciação Científica PIBIC Jr. (2014-2015)</h3>
+                    <p>Desenvolveu o projeto "Carga eletrônica programável para ensaios em sistemas fotovoltaicos", apresentado na primeira fase do XVII Congresso de iniciação científica da UNESP.</p></li>
+                    <li><h3>Bolsa de Iniciação Científica Pró Talentos Unesp (2016-2017)</h3>
+                    <p>Desenvolveu o projeto "Praça: reutilização de espaços públicos como forma de entretenimento e lazer".</p></li>
+                </ul>
+
+                
+                <h2>Linguagens de Programação e <i>Frameworks</i></h2>
+                <ul class="content-list2">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li> 
+                    <li>React.js</li>
+                    <li>Bootstrap</li>          
+                </ul>            
+                    
+                <h2>Softwares</h2>
+                <ul class="content-list2">
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe After Effects</li>
+                    <li>Adobe Premiere</li>
+                    <li>Davinci Resolve</li>
+                    <li>Microsoft Office</li>
+                    <li>Visual Studio Code</li>           
+                </ul>
+                    
+                <h2>Línguas</h2>
+                <ul class="content-list2">
+                    <li id=" ">Português</li>
+                    <li>Inglês</li>                   
+                </ul>              
+            </div>
+
+            <div id="portfolio">    <!--portfolio beginning-->
+                <h1>Portfólio</h1>  
+                <h2>Design Gráfico</h2>
+                <div id="design">
+                    <div class="portfolio-gd"><a href="./gd1.html">
+                        <img class="portfolio-picture" src="./imagens/portfolioGD/xadrez2.jpg" alt="Fotografia de peças de xadrez">
+                        <h3 class="portfolio-title">Projeto Fotográfico</h3>
+                        <p class="portfolio-text">Projeto de fotografia desenvolvido na faculdade e editado no Photoshop.</p>
+                    </a></div>
+
+                    <div class="portfolio-gd"><a href="./gd2.html">
+                        <img class="portfolio-picture" src="./imagens/portfolioGD/cartazmockup.jpeg" alt="Mockup de dois cartazes em uma parede">
+                        <h3 class="portfolio-title">Intervenção Urbana</h3>
+                        <p class="portfolio-text">Projeto de intervenção urbana com o intuito de divulgar o Multirão Bem Viver.</p>
+                    </a></div>
+
+                    <div class="portfolio-gd"><a href="./gd3.html">
+                        <img class="portfolio-picture" src="./imagens/portfolioGD/duckwave2.png" alt="Peça Gráfica de um pato com estética Vaporwave">
+                        <h3 class="portfolio-title">Identidade Visual</h3>
+                        <p class="portfolio-text">Projeto de Identidade Visual para um canal no Youtube e outras redes sociais.</p>
+                    </a></div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>    
+</body>
+</html>

@@ -1,0 +1,629 @@
+html {
+    font-size: 90%;
+}
+
+a {    /*links where manually styled so they didn't have a general style to be applied*/
+    text-decoration: none;
+}
+
+body {
+    background-color: #1A2B39;
+}
+
+#top-bar {  /*options bar for mobile version*/
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #F24C4E;
+}
+
+#title {    /*only applied to top-bar for mobile version*/
+    margin: 0;
+    font-size: 2rem;
+    color: #E9E3E6;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+}
+
+#menu-button {  /*menu button only applied to mobile version*/
+    filter: invert(93%) sepia(8%) saturate(84%) hue-rotate(277deg) brightness(99%) contrast(90%);   /*filter so the colors could be easily changed*/
+    height: 35px;
+}
+
+#language-selector2 {   /*language selector for mobile version*/
+    letter-spacing: 0.1rem;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#language-selector1 {   /*language selector for PC version*/
+    position: fixed;
+    right: 4%;
+    top: 5%;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+#heading {  /*introduction and presentation*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+#heading-text {
+    line-height: 3vw;   
+    font-size: 2vw;
+    color: #E9E3E6;
+    font-family: "Roboto Slab", serif;
+}
+
+#profile-picture {  /*picture only applied to heading*/
+    width: 34%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #F24C4E;
+    flex-shrink: 0;
+}
+
+#content {  /*all content, applied to all pages*/
+    width: 60%;
+    margin-left: 24%;
+    padding-bottom: 1%;
+}
+
+ul p, .gd-text  {   /*applied to both resume items and portfolio text*/
+    padding-left: 60px;
+    line-height: 2vw;
+    font-size: 1.2vw;
+    color: #E9E3E6;
+    font-family: "Roboto Slab", serif;
+}
+
+ul p {    /*applied only to resume items*/
+    margin-bottom: 55px;
+}
+
+h1 {    /*all page titles*/
+    padding: 30px 0 15px 0;
+    color: #FFD23F;   
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.3vw;
+    font-family: "Roboto Slab", serif;
+}
+
+#resume h2, #portfolio h2 { /*subtitles, applied to main page*/
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: #FFD23F;   
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: "Roboto Slab", serif;
+}
+
+#download-button { /*resume download button*/
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    color: #E9E3E6;
+    background-color: #F24C4E;
+    border-color: #F24C4E;    
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bold;
+    font-size: 1.2vw;
+    font-family: "Roboto Slab", serif;
+}
+
+#download-button:hover {
+    border-color: #E9E3E6;
+}
+
+h3 {    /*applied to both resume and portfolio*/
+    padding-left: 30px;
+    color: #FFD23F;
+    font-size: 1.3vw;
+    font-family: "Roboto Slab", serif;
+}
+
+#portfolio h3 {
+    padding-left: 0px;
+}
+
+.content-list { /*applied only to resume*/
+    margin-bottom: 80px;
+}
+
+.content-list2 {    /*applied only to resume, last three subtitles are styled for two columns*/
+    columns: 2;
+    margin-bottom: 4%;
+}
+
+.content-list2 > li {   /*items inside resume*/
+    color: #E9E3E6;
+    margin-left: 30px;
+    padding-bottom: 10px;
+    font-size: 1.2vw;
+    font-family: "Roboto Slab", serif;
+}
+
+#menu1 {    /*menu for PC version*/
+    position: fixed;    
+    background-color: #F24C4E;
+    height: 100%;
+    width: 19%;
+    min-width: 200px;
+}
+
+#menu2 {    /*menu for mobile version*/
+    display: none;
+    position: fixed;
+    border-radius: 25px;
+    margin-top: 2vh;
+    background-color: #F24C4E;
+    left: 5%;
+    height: 50%;
+    max-height: 300px;
+    min-height: 250px;
+    width: 90%;
+}
+
+#menu-content { /*applied to both PC and mobile menus*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7%;
+    padding-left: 0px;
+    text-align: center; 
+}
+
+.menu { /*applied to items inside the menu*/
+    border: none;
+    font-family: "Oswald", sans-serif;
+    background-color: transparent;
+    color: #000000;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#icons {    /*parent containing all icons*/
+    position: relative;
+    bottom: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8%;
+}
+
+#email {    /*email inside the menu*/
+    margin: 0px;
+    padding-top: 2%;
+    position: relative;
+    text-align: center;
+    color: #FFD23F;
+    font-size: 1vw;
+    font-family: "Roboto Slab", serif;
+    padding-left: 0px;
+}
+
+.icon { /*icons for links*/
+    height: 1.5vw;
+    border-radius: 15%;
+}
+
+/*next four styles are applied to highlight icons when hovered. Filters where used to easily change their colors, since I hadn't decided on which colors to use yet*/
+
+.icon-yellow {
+    filter: invert(79%) sepia(80%) saturate(976%) hue-rotate(327deg) brightness(112%) contrast(101%);
+}
+
+.icon-yellow:hover {
+    filter: invert(93%) sepia(8%) saturate(84%) hue-rotate(277deg) brightness(99%) contrast(90%);
+}
+
+.icon-white {
+    filter: invert(93%) sepia(8%) saturate(84%) hue-rotate(277deg) brightness(99%) contrast(90%);
+}
+
+.icon-white:hover {
+    filter: invert(79%) sepia(80%) saturate(976%) hue-rotate(327deg) brightness(112%) contrast(101%);
+}
+
+#design {   /*portfolio selection on main page*/
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1%;
+}
+
+.portfolio-gd { /*applied to each portfolio item on main page*/
+    margin-bottom: 3%;
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 200px;
+    background-color: #F24C4E;
+    border-radius: 20px;
+}
+
+.portfolio-picture {    /*applied to pictures in portfolio items on main page*/
+    width: 100%;
+    height: 210px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.portfolio-title {  /*title of portfolio items on main page*/
+    margin: 1.5% 3% 0% 3%;
+    color: #FFD23F;
+    font-size: 1.6rem;
+    font-family: "Roboto Slab", serif;
+}
+
+.portfolio-text {   /*text of portfolio items on main page*/
+    margin: 1% 3% 3% 3%;
+    line-height: 2rem;
+    font-size: 1.35rem;
+    color: #E9E3E6;
+    font-family: "Roboto Slab", serif;
+}
+
+.gd-title { /*title for each portfolio item, applied on secondary pages*/
+    padding-top: 8vh;
+    color: #FFD23F;   
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: "Roboto Slab", serif;
+}
+
+/*following items style the pictures on each portfolio page using grid*/
+
+#gd1-pictures { 
+    padding-left: 60px;
+    margin-bottom: 2%;
+    display: grid;
+    gap: 1%;
+    grid-template: 0.96fr auto / 0.96fr 1.07fr;
+    width: 100%;
+}
+
+#picture1 {
+    grid-area: 1/1/2/2;
+    cursor: pointer;
+}
+
+#picture2 {
+    grid-area: 1/2/3/3;
+    cursor: pointer;
+}
+
+#picture3 {
+    grid-area: 2/1/3/2;
+    cursor: pointer;
+}
+
+#gd2-pictures {
+    padding-left: 60px;
+    padding-bottom: 2%;
+    display: grid;
+    gap: 1%;
+    grid-template: 1fr auto / 1fr 1fr;
+    width: 100%;
+}
+
+#picture4 {
+    grid-area: 1/1/2/2;
+    cursor: pointer;
+}
+
+#picture5 {
+    grid-area:1/2/2/3;
+    cursor: pointer;
+}
+
+#picture6 {
+    grid-area: 2/1/3/3;
+    cursor: pointer;
+}
+
+#gd3-pictures {
+    padding-left: 60px;
+    padding-bottom: 2%;
+    display: grid;
+    gap: 1%;
+    grid-template: 0.52fr 0.38fr / 0.52fr 0.96fr;
+    width: 100%;
+}
+
+#picture7 {
+    cursor: pointer;
+    padding-left: 60px;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+#picture8 {
+    grid-area:1/1/2/2;
+    cursor: pointer;
+}
+
+#picture9 {
+    grid-area: 1/2/2/3;
+    cursor: pointer;
+}
+
+#picture0 {
+    grid-area: 2/1/3/3;
+    cursor: pointer;
+}
+
+.gd-pic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*classes "hidden" and "highlight" where used to show a picture that has been clicked on, and hide them after clicking again*/
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    cursor: pointer;
+    box-shadow: 0 0 0 1000px rgba(0,0,0,.8);
+    max-height: 90%;
+    max-width: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/*next four styles where used to change the scrollbar appearance*/
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #F24C4E #1A2B39;
+}
+  
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #1A2B39;
+}
+    
+*::-webkit-scrollbar-thumb {
+    background-color: #F24C4E;
+    border-radius: 20px;
+}
+
+@media (orientation: portrait) {    /*slight change in heading style for portrait display*/
+    #heading {
+        flex-direction: column;
+        gap: 2%
+    }
+
+    #profile-picture {
+        width: 60%;
+    }
+
+    #heading-text {
+        text-align: center;
+        width: 100%;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+}
+
+@media (max-width: 900px) { /*changes in lots of already styled elements, used in mobile version*/
+    html {
+        font-size: 60%;
+    }
+
+    #heading {
+        height: 83vh;
+    }
+    
+    #heading-text {
+        font-size: 3.6vw;
+        line-height: 5.7vw;
+    }
+
+    #resume1 {
+        height: 27px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #resume h2 {
+        padding: 0 0 10px 15px;
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        padding: 30px 0 5px 0;
+    }
+
+    #download-button {
+        padding: 3px 12px;
+        margin: 0 0 15px 15px;
+        font-size: 1.7rem;
+    }
+
+    #download-button:hover {
+        border-color: #F24C4E;
+    }
+
+    #portfolio h2 {
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        padding-left: 15px;
+        font-size: 1.4rem;
+    }
+
+    ul p, .gd-text {
+        padding-left: 30px;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+
+    ul p {        
+        margin-bottom: 20px;
+    }
+
+    .content-list {
+        margin-bottom: 30px;
+    }
+
+    .content-list2 > li {
+        font-size: 1.2rem;
+    }
+
+    #menu1 {
+        display: none;
+    }
+
+    .menu {
+        font-size: 2.2rem;
+    }
+
+    #menu-content {        
+        justify-content: space-around;
+        padding: 2% 0 2% 0;
+    }
+
+    #icons {
+        bottom: 0;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+
+    .icon {
+        height: 2rem;
+    }
+
+    #email {
+        font-size: 1.8rem;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    #content {
+        width: 100%;
+        margin: 60px 0 0 0;
+        padding: 0 7% 4% 7%;
+    } 
+
+    #top-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.5% 0 2.5%;
+    }
+
+    #language-selector1 {
+        display: none;
+    }
+
+    #design {
+        padding: 0 30px 0 30px;
+    }
+
+    .gd-title {
+        padding: 5% 0 2% 0;
+        color: #FFD23F;   
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.7rem;
+        font-family: "Roboto Slab", serif;
+    }
+
+    .gd-text {
+        padding: 0 5% 0 15px;
+    }
+
+    #gd1-pictures {
+        padding: 0 5% 0 15px;
+    }
+
+    #gd2-pictures {
+        padding: 0 5% 3% 15px;
+    }
+
+    #gd3-pictures {
+        padding: 0 5% 5% 15px;
+    }
+
+    #gd3-picture1 {
+        padding: 0 5% 3% 15px;
+    }
+
+    @media (orientation: portrait){     /*slight change in heading style for portrait display in mobile devices*/
+        #heading {
+            height: 93vh;
+            gap: 2%;
+        }
+
+        #profile-picture {
+            border: 3px solid #F24C4E;    
+        }
+
+        #heading-text {
+            text-align: center;
+            width: 100%;
+            font-size: 5vw;
+            line-height: 8vw;
+        }
+
+        #menu-content {        
+            justify-content: space-around;
+            padding: 7% 0 7% 0;
+        }
+
+        @media (max-aspect-ratio: 6.3/10) { /*adapting the heading text for different aspect ratios*/
+            #heading-text{
+                font-size: 5.9vw;
+                line-height: 10vw;
+            }            
+        }
+    }
+
+    @media (min-aspect-ratio: 2/1) {    /*adapting the heading style for different aspect ratios*/
+        #profile-picture {
+            width: 30%;
+        }
+        
+        #heading-text {
+            font-size: 3.2vw;
+            line-height: 4.6vw;
+        }
+    }
+}
+
+
